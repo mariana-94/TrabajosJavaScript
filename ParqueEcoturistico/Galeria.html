@@ -1,0 +1,461 @@
+<html>
+<head>
+	<meta charset="utf-8">
+   <meta name="description" content="Ejemplo de HTML5 y CSS">
+   <meta name="keywords" content="HTML5,css,javaScript">
+    <title>Galeria</title>
+  <link rel="stylesheet" href="CSS/JQuery2.css">
+</head>
+
+<body>
+<script>
+	var imageList= new Array;
+	var currentSlide= 0;
+
+	imageList[0]= new Image;
+	imageList[0].src="Imagenes/p1.jpg";
+	imageList[1]= new Image;
+	imageList[1].src="Imagenes/p2.jpg";
+	imageList[2]= new Image;
+	imageList[2].src="Imagenes/p3.jpg";
+	imageList[3]= new Image;
+	imageList[3].src="Imagenes/p4.jpg";
+	imageList[4]= new Image;
+	imageList[4].src="Imagenes/p5.jpg";
+	imageList[5]= new Image;
+	imageList[5].src="Imagenes/p6.jpg";
+	imageList[6]= new Image;
+	imageList[6].src="Imagenes/p7.jpg";
+	
+	function nextSlide()
+	{
+		if (currentSlide + 1 < imageList.length)
+		{
+				currentSlide += 1;
+				document.slideShow.src = imageList[currentSlide].src;
+            
+            if(currentSlide==0)
+            {
+                document.getElementById('m1').style.border="3px solid black"; 
+                document.getElementById('m2').style.border="0px solid white";
+                document.getElementById('m3').style.border="0px solid white";
+                document.getElementById('m4').style.border="0px solid white";
+                document.getElementById('m5').style.border="0px solid white";
+                document.getElementById('m6').style.border="0px solid white";
+                document.getElementById('m7').style.border="0px solid white";
+               
+            }
+            if(currentSlide==1)
+            {
+                document.getElementById('m1').style.border="0px solid white"; 
+                document.getElementById('m2').style.border="3px solid black";
+            }
+            if(currentSlide==2)
+            {
+                document.getElementById('m1').style.border="0px solid white"; 
+                document.getElementById('m2').style.border="0px solid white"; 
+                document.getElementById('m3').style.border="3px solid black"; 
+  
+            }
+            if(currentSlide==3)
+            {
+                document.getElementById('m1').style.border="0px solid white"; 
+                document.getElementById('m2').style.border="0px solid white";
+                document.getElementById('m3').style.border="0px solid white";
+                document.getElementById('m4').style.border="3px solid black";
+            }
+            if(currentSlide==4)
+            {
+                document.getElementById('m1').style.border="0px solid white"; 
+                document.getElementById('m2').style.border="0px solid white";
+                document.getElementById('m3').style.border="0px solid white";
+                document.getElementById('m4').style.border="0px solid white";
+                document.getElementById('m5').style.border="3px solid black"; 
+                
+            }
+            if(currentSlide==5)
+            {
+                
+                document.getElementById('m1').style.border="0px solid white"; 
+                document.getElementById('m2').style.border="0px solid white";
+                document.getElementById('m3').style.border="0px solid white";
+                document.getElementById('m4').style.border="0px solid white";
+                document.getElementById('m5').style.border="0px solid white";
+                document.getElementById('m6').style.border="3px solid black";
+            }
+            if(currentSlide==6)
+            {
+                document.getElementById('m2').style.border="0px solid white";
+                document.getElementById('m3').style.border="0px solid white";
+                document.getElementById('m4').style.border="0px solid white";
+                document.getElementById('m5').style.border="0px solid white";
+                document.getElementById('m6').style.border="0px solid white";
+                document.getElementById('m7').style.border="3px solid black"; 
+                
+            }
+            
+                
+                
+		}
+		else if (currentSlide = 7) 
+		{
+			currentSlide=0;
+            if(currentSlide==0)
+            {
+                document.getElementById('m2').style.border="0px solid white";
+                document.getElementById('m3').style.border="0px solid white";
+                document.getElementById('m4').style.border="0px solid white";
+                document.getElementById('m5').style.border="0px solid white";
+                document.getElementById('m6').style.border="0px solid white";
+                document.getElementById('m7').style.border="0px solid white";
+                document.getElementById('m1').style.border="3px solid black"; 
+            }
+            if(currentSlide==1)
+            {
+                document.getElementById('m1').style.border="0px solid white"; 
+                document.getElementById('m2').style.border="3px solid black";
+            }
+            if(currentSlide==2)
+            {
+                document.getElementById('m1').style.border="0px solid white"; 
+                document.getElementById('m2').style.border="0px solid white"; 
+                document.getElementById('m3').style.border="3px solid black"; 
+  
+            }
+            if(currentSlide==3)
+            {
+                document.getElementById('m1').style.border="0px solid white"; 
+                document.getElementById('m2').style.border="0px solid white";
+                document.getElementById('m3').style.border="0px solid white";
+                document.getElementById('m4').style.border="3px solid black";
+            }
+            if(currentSlide==4)
+            {
+                document.getElementById('m1').style.border="0px solid white"; 
+                document.getElementById('m2').style.border="0px solid white";
+                document.getElementById('m3').style.border="0px solid white";
+                document.getElementById('m4').style.border="0px solid white";
+                document.getElementById('m5').style.border="3px solid black"; 
+                
+            }
+            if(currentSlide==5)
+            {
+                
+                document.getElementById('m2').style.border="0px solid white";
+                document.getElementById('m3').style.border="0px solid white";
+                document.getElementById('m4').style.border="0px solid white";
+                document.getElementById('m5').style.border="0px solid white";
+                document.getElementById('m6').style.border="3px solid black";
+            }
+            if(currentSlide==6)
+            {
+                document.getElementById('m1').style.border="0px solid white"; 
+                document.getElementById('m2').style.border="0px solid white";
+                document.getElementById('m3').style.border="0px solid white";
+                document.getElementById('m4').style.border="0px solid white";
+                document.getElementById('m5').style.border="0px solid white";
+                document.getElementById('m6').style.border="0px solid white";
+                document.getElementById('m7').style.border="3px solid black"; 
+                
+            }
+			document.slideShow.src = imageList[currentSlide].src;
+		};
+
+	}
+
+	function previousSlide()
+	{
+		if(currentSlide - 1 >= 0)
+		{
+			currentSlide -= 1;
+			document.slideShow.src = imageList[currentSlide].src;
+             if(currentSlide==0)
+            {
+                document.getElementById('m1').style.border="3px solid black"; 
+                document.getElementById('m2').style.border="0px solid white";
+                document.getElementById('m3').style.border="0px solid white";
+                document.getElementById('m4').style.border="0px solid white";
+                document.getElementById('m5').style.border="0px solid white";
+                document.getElementById('m6').style.border="0px solid white";
+                document.getElementById('m7').style.border="0px solid white";
+              
+            }
+            if(currentSlide==1)
+            {
+                document.getElementById('m1').style.border="0px solid white"; 
+                document.getElementById('m3').style.border="0px solid white";
+                document.getElementById('m4').style.border="0px solid white";
+                document.getElementById('m5').style.border="0px solid white";
+                document.getElementById('m6').style.border="0px solid white";
+                document.getElementById('m7').style.border="0px solid white";
+                document.getElementById('m2').style.border="3px solid black";
+            }
+            if(currentSlide==2)
+            {
+                document.getElementById('m1').style.border="0px solid white"; 
+                document.getElementById('m2').style.border="0px solid white"; 
+                document.getElementById('m4').style.border="0px solid white";
+                document.getElementById('m5').style.border="0px solid white";
+                document.getElementById('m6').style.border="0px solid white";
+                document.getElementById('m7').style.border="0px solid white";
+                document.getElementById('m3').style.border="3px solid black"; 
+  
+            }
+            if(currentSlide==3)
+            {
+                document.getElementById('m1').style.border="0px solid white"; 
+                document.getElementById('m2').style.border="0px solid white";
+                document.getElementById('m3').style.border="0px solid white";
+                document.getElementById('m5').style.border="0px solid white";
+                document.getElementById('m6').style.border="0px solid white";
+                document.getElementById('m7').style.border="0px solid white";
+                document.getElementById('m4').style.border="3px solid black";
+            }
+            if(currentSlide==4)
+            {
+                document.getElementById('m1').style.border="0px solid white"; 
+                document.getElementById('m2').style.border="0px solid white";
+                document.getElementById('m3').style.border="0px solid white";
+                document.getElementById('m4').style.border="0px solid white";
+                document.getElementById('m6').style.border="0px solid white";
+                document.getElementById('m7').style.border="0px solid white";
+                document.getElementById('m5').style.border="3px solid black"; 
+                
+            }
+            if(currentSlide==5)
+            {
+                document.getElementById('m1').style.border="0px solid white"; 
+                document.getElementById('m2').style.border="0px solid white";
+                document.getElementById('m3').style.border="0px solid white";
+                document.getElementById('m4').style.border="0px solid white";
+                document.getElementById('m5').style.border="0px solid white";
+                document.getElementById('m7').style.border="0px solid white";
+                document.getElementById('m6').style.border="3px solid black";
+            }
+            if(currentSlide==6)
+            {
+                document.getElementById('m1').style.border="0px solid white"; 
+                document.getElementById('m2').style.border="0px solid white";
+                document.getElementById('m3').style.border="0px solid white";
+                document.getElementById('m4').style.border="0px solid white";
+                document.getElementById('m5').style.border="0px solid white";
+                document.getElementById('m6').style.border="0px solid white";
+                document.getElementById('m7').style.border="3px solid black"; 
+                
+            }
+		}
+
+		else if (currentSlide = -1) 
+		{
+			currentSlide=7;
+             if(currentSlide==0)
+            {
+                document.getElementById('m1').style.border="3px solid black"; 
+                document.getElementById('m2').style.border="0px solid white";
+                document.getElementById('m3').style.border="0px solid white";
+                document.getElementById('m4').style.border="0px solid white";
+                document.getElementById('m5').style.border="0px solid white";
+                document.getElementById('m6').style.border="0px solid white";
+                document.getElementById('m7').style.border="0px solid white";
+              
+            }
+            if(currentSlide==1)
+            {
+                document.getElementById('m1').style.border="0px solid white"; 
+                document.getElementById('m3').style.border="0px solid white";
+                document.getElementById('m4').style.border="0px solid white";
+                document.getElementById('m5').style.border="0px solid white";
+                document.getElementById('m6').style.border="0px solid white";
+                document.getElementById('m7').style.border="0px solid white";
+                document.getElementById('m2').style.border="3px solid black";
+            }
+            if(currentSlide==2)
+            {
+                document.getElementById('m1').style.border="0px solid white"; 
+                document.getElementById('m2').style.border="0px solid white"; 
+                document.getElementById('m4').style.border="0px solid white";
+                document.getElementById('m5').style.border="0px solid white";
+                document.getElementById('m6').style.border="0px solid white";
+                document.getElementById('m7').style.border="0px solid white";
+                document.getElementById('m3').style.border="3px solid black"; 
+  
+            }
+            if(currentSlide==3)
+            {
+                document.getElementById('m1').style.border="0px solid white"; 
+                document.getElementById('m2').style.border="0px solid white";
+                document.getElementById('m3').style.border="0px solid white";
+                document.getElementById('m5').style.border="0px solid white";
+                document.getElementById('m6').style.border="0px solid white";
+                document.getElementById('m7').style.border="0px solid white";
+                document.getElementById('m4').style.border="3px solid black";
+            }
+            if(currentSlide==4)
+            {
+                document.getElementById('m1').style.border="0px solid white"; 
+                document.getElementById('m2').style.border="0px solid white";
+                document.getElementById('m3').style.border="0px solid white";
+                document.getElementById('m4').style.border="0px solid white";
+                document.getElementById('m6').style.border="0px solid white";
+                document.getElementById('m7').style.border="0px solid white";
+                document.getElementById('m5').style.border="3px solid black"; 
+                
+            }
+            if(currentSlide==5)
+            {
+                document.getElementById('m1').style.border="0px solid white"; 
+                document.getElementById('m2').style.border="0px solid white";
+                document.getElementById('m3').style.border="0px solid white";
+                document.getElementById('m4').style.border="0px solid white";
+                document.getElementById('m5').style.border="0px solid white";
+                document.getElementById('m7').style.border="0px solid white";
+                document.getElementById('m6').style.border="3px solid black";
+            }
+            if(currentSlide==6)
+            {
+                document.getElementById('m1').style.border="0px solid white"; 
+                document.getElementById('m2').style.border="0px solid white";
+                document.getElementById('m3').style.border="0px solid white";
+                document.getElementById('m4').style.border="0px solid white";
+                document.getElementById('m5').style.border="0px solid white";
+                document.getElementById('m6').style.border="0px solid white";
+                document.getElementById('m7').style.border="3px solid black"; 
+                
+            }
+			document.slideShow.src = imageList[currentSlide].src;
+		};
+
+
+	}
+     function uno(id)
+     {
+        currentSlide = id;
+        document.slideShow.src = imageList[currentSlide].src; 
+        document.getElementById('m1').style.border="2px solid gray"; 
+        document.getElementById('m2').style.border="0px solid white";
+        document.getElementById('m3').style.border="0px solid white";
+        document.getElementById('m4').style.border="0px solid white";
+        document.getElementById('m5').style.border="0px solid white";
+        document.getElementById('m6').style.border="0px solid white";
+        document.getElementById('m7').style.border="0px solid white"; 
+     }
+     
+     function dos(id)
+     {
+        currentSlide = id;
+        document.slideShow.src = imageList[currentSlide].src; 
+        document.getElementById('m1').style.border="0px solid white"; 
+        document.getElementById('m2').style.border="2px solid gray";
+        document.getElementById('m3').style.border="0px solid white";
+        document.getElementById('m4').style.border="0px solid white";
+        document.getElementById('m5').style.border="0px solid white";
+        document.getElementById('m6').style.border="0px solid white";
+        document.getElementById('m7').style.border="0px solid white"; 
+     }
+    
+    function tres(id)
+    {
+        currentSlide = id;
+        document.slideShow.src = imageList[currentSlide].src; 
+        document.getElementById('m1').style.border="0px solid white"; 
+        document.getElementById('m2').style.border="0px solid white";
+        document.getElementById('m3').style.border="2px solid gray";
+        document.getElementById('m4').style.border="0px solid white";
+        document.getElementById('m5').style.border="0px solid white";
+        document.getElementById('m6').style.border="0px solid white";
+        document.getElementById('m7').style.border="0px solid white"; 
+     }
+    
+    function cuatro(id)
+    {
+        currentSlide = id;
+        document.slideShow.src = imageList[currentSlide].src; 
+        document.getElementById('m1').style.border="0px solid white"; 
+        document.getElementById('m2').style.border="0px solid white";
+        document.getElementById('m3').style.border="0px solid white";
+        document.getElementById('m4').style.border="2px solid gray";
+        document.getElementById('m5').style.border="0px solid white";
+        document.getElementById('m6').style.border="0px solid white";
+        document.getElementById('m7').style.border="0px solid white"; 
+     }
+    
+     function cinco(id)
+     {
+        currentSlide = id;
+        document.slideShow.src = imageList[currentSlide].src; 
+        document.getElementById('m1').style.border="0px solid white"; 
+        document.getElementById('m2').style.border="0px solid white";
+        document.getElementById('m3').style.border="0px solid white";
+        document.getElementById('m4').style.border="0px solid white";
+        document.getElementById('m5').style.border="2px solid gray";
+        document.getElementById('m6').style.border="0px solid white";
+        document.getElementById('m7').style.border="0px solid white"; 
+     }
+    
+    function seis(id)
+    {
+        currentSlide = id;
+        document.slideShow.src = imageList[currentSlide].src; 
+        document.getElementById('m1').style.border="0px solid white"; 
+        document.getElementById('m2').style.border="0px solid white";
+        document.getElementById('m3').style.border="0px solid white";
+        document.getElementById('m4').style.border="0px solid white";
+        document.getElementById('m5').style.border="0px solid white";
+        document.getElementById('m6').style.border="2px solid gray";
+        document.getElementById('m7').style.border="0px solid white"; 
+     }
+    
+    function siete(id)
+    {
+        currentSlide = id;
+        document.slideShow.src = imageList[currentSlide].src; 
+        document.getElementById('m1').style.border="0px solid white"; 
+        document.getElementById('m2').style.border="0px solid white";
+        document.getElementById('m3').style.border="0px solid white";
+        document.getElementById('m4').style.border="0px solid white";
+        document.getElementById('m5').style.border="0px solid white";
+        document.getElementById('m6').style.border="0px solid white";
+        document.getElementById('m7').style.border="2px solid gray"; 
+     }
+    
+    
+
+</script>
+<body>
+    
+    <nav id="menun">
+    <ul class="nav">
+       <li><a href="inicio.html" style="font-size: 14px"> Inicio</a> </li>
+        <li><a href="AcercaCentro.html"  style="font-size: 14px"> Acerca del centro</a> </li>
+        <li><a href="servicios.html"  style="font-size: 14px"> Servicios</a> </li>
+        <li><a href="Galeria.html"  style="font-size: 14px"> Galeria</a> </li>
+        <li><a href="Paquetesycostos.html"  style="font-size: 14px"> Paquetes y costos</a> </li>
+    </ul>
+    </nav>
+    
+
+	<a href="#" onClick ="previousSlide();" id="ant"> << </a>
+
+	<img src="Imagenes/p1.jpg" width="700px" name="slideShow" id="fig2">  </img>  <br>
+
+	<a href="#" onClick = "nextSlide();" id="sig"> >> </a>
+        
+		<br>
+		<br>
+        <br>
+    
+        <center>
+	 	 <table>
+    <th id="1"> <a href="#" onclick="uno('0');"><img src="Imagenes/p1.jpg" width="100px" name="slide" id="m1"><br>  </img></a> </th>
+    <th id="2"> <a href="#" onclick="dos('1');"><img src="Imagenes/p2.jpg" width="100px" name="slide" id="m2"><br>  </img></a> </th>
+    <th id="3"> <a href="#" onclick="tres('2');"><img src="Imagenes/p3.jpg" width="100px" name="slide" id="m3"><br>  </img></a></th>
+    <th id="4"> <a href="#" onclick="cuatro('3');"><img src="Imagenes/p4.jpg" width="100px" name="slide" id="m4"><br>  </img></a></th>
+    <th id="5"> <a href="#" onclick="cinco('4');"><img src="Imagenes/p5.jpg" width="100px" name="slide" id="m5"><br>  </img></a> </th>
+    <th id="6"> <a href="#" onclick="seis('5');"><img src="Imagenes/p6.jpg" width="100px" name="slide" id="m6"><br>  </img></a> </th>
+    <th id="7"> <a href="#" onclick="siete('6');"><img src="Imagenes/p7.jpg" width="100px" name="slide" id="m7"><br>  </img></a> </th>
+  			
+  		    </table>
+        </center>
+  	 
+</body>
+</html>
