@@ -112,23 +112,16 @@ function compara(valorr)
 
     var aux=document.getElementById("col").textContent;
     var aux1 = valorr;
-     // alert("color texto: " +aux);
-     //  alert("Color cuadro: " +aux1);
-
+  
       if(aux == aux1){
-         //alert("Correcto");
-        
-           document.getElementById('resultadoo').innerHTML=" <b>CORRECTO</b>";
-             $("#resultadoo").addClass('cambiaColor6');
-         
+          $("#resultadoo").addClass('cambiaColor6');
+          document.getElementById("resultadoo").innerHTML=" <b>CORRECTO</b>";
+          document.getElementById("ant").style.display = "block"   
       }
-      else{
-         //alert("Incorrecto");
-          
-           document.getElementById('resultadoo').innerHTML="<b>INCORRECTO</b>";
+      else if(aux1 != aux){    
            $("#resultadoo").addClass('cambiaColor3');
-            // document.getElementById("ant").disabled  = true;
-             // $("#ant").addClass('disable');
+           document.getElementById("resultadoo").innerHTML="<b>INCORRECTO</b>";
+            document.getElementById("ant").style.display = "none";
       }
 
 
