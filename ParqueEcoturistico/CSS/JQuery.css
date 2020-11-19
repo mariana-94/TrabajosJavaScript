@@ -1,0 +1,355 @@
+/*  Selector universal*/
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+/* agregando estilos para los elementos h1,h2*/
+h1{
+	
+    font-family: "klavika-web","Helvetica Neue",Helvetica,Arial,Gene;
+    font-size: 40px;
+	margin-bottom:  10px;
+	margin-top:  20px;
+	color: #CCC;
+	text-align: left;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+h2{
+	font-family: "Helvetica Neue",Helvetica,Arial,Geneva,sans-serif;
+	font-size: 22px;
+	margin-bottom:  15px;
+	color: #CCC;
+	text-align: left;
+}
+
+h3
+{
+	font-family: "klavika-web","Helvetica Neue",Helvetica,Arial,Genev;
+	color: #333;
+	background-clip: border-box;
+    background-color: #ECECEC;
+    font-size: 24px;
+
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    padding-left: 15.5333px;
+    padding-right: 15.5333px;
+    padding-top: 10px;
+
+    background-image:  url("../Imagenes/white.png");
+	background-repeat: repeat-x,y;
+
+}
+h4
+{
+	color: #333;
+   font-family: "Helvetica Neue",HelveticaNeue,Helvetica,Arial,sans-;
+   text-align: left;
+
+}
+
+#reflectio
+{
+   color: #333;
+   font-family: "italic",HelveticaNeue,Helvetica,Arial,sans-;
+   text-align: center;
+}
+
+
+/* regla por defecto para elementos estructurales de HTML*/
+
+header, section, footer, aside, nav, article, figure, figcaption, hgroup{
+	display:block;
+}
+
+
+
+/*header {background-color: red;}
+section{background-color: yellow;}
+aside{background-color: green;}
+footer{background-color: black;}*/
+
+/* centrando el cuerpo*/
+body{
+	text-align: center;
+}
+
+#Agrupar{
+	background: #000000;
+	padding: 5PX 15PX;
+	text-align: left;
+}
+
+ 
+/* agregando estilos para nav*/
+#cabecera{
+	background: #000000;
+	color: #ffffff;
+	float: bottom;
+	text-align: left;
+}
+
+#cumbre
+{
+	text-align: center;
+}
+
+#fig1
+{
+	background:#ffffff; /*#108040*/
+	text-align: left;
+	border-right: 20px solid  #ffffff;
+	padding: 15PX;
+}
+
+#fig2
+{
+	background:#ffffff; /*#108040*/
+	text-align: center;
+	border-right: 20px solid  #ffffff;
+	padding: 15PX;
+}
+
+#fig3
+{
+	float: right;
+}
+
+
+#dos.img
+{
+
+	width: 10px;
+	float: right;
+	margin-left: 200px solid #ffffff;
+}
+
+#tres.img
+{
+	width: 1%;
+	float: left;
+}
+
+#links a 
+{
+	    font-family: "Helvetica Neue",HelveticaNeue,Helvetica,Arial,sans-;
+		color: #108040;
+		border-image-source: none;
+		list-style: none;
+		
+}
+
+
+/* agragando estilos para nav*/
+#menu
+{
+	background: #333;
+	padding: 5PX 15PX;
+	text-align: left;
+	width: 1220px;
+	margin: 0px auto;
+
+	background-size: auto auto;
+
+
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+#menun
+{
+	background: #333;
+	text-align: right;
+}
+
+
+
+#menu li{
+	display: inline-block;
+	font: bold 14px verdana, sans-serif;
+	color: #ffffff;
+	margin: 0px auto;
+}
+
+#menu li a
+{
+	display: block;
+	padding: 10px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#menu li a:hover
+{
+	background: #000000;
+}
+
+
+#menun li{
+	display: inline-block;
+	list-style: none;
+	font: bold 14px verdana, sans-serif;
+	color: #ffffff;
+}
+
+#menun li a
+{
+	display: block;
+	padding: 10px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#menun li a:hover
+{
+	background: #000000;;
+}
+
+
+/* creando dos columnas con la propiedad float*/
+#seccion{
+
+	width: 1250px;
+	margin: 0px auto;
+	font-kerning: auto;
+    line-height: 22.5px;
+    margin-bottom: 15px;
+
+}
+
+#uno 
+{
+	background-image:  url("../Imagenes/dark.png");
+	background-repeat: repeat-x,y;
+	color: #ffffff;
+	text-align: center;
+}
+
+#seccion cuatro
+{
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+#columna{
+	float: left;
+	width: 220px;
+	margin: 20px,0px;
+	padding: 20px;
+	background: #ffffff;
+}
+
+#pie{
+	clear: both;
+	background: rgba(0, 0, 0, 0.3), transparent;
+	padding: 50px;
+ 	background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image:  url("http://jquerymobile.com/jquery-wp-content/themes/jquery/images/bg-footer-noise.jpg");
+    border-top-color: #3EB249;
+
+}
+
+/* agragando los ultimos toques a nuestro diseno basico*/
+article{
+	background: #ffffff;
+	border:  1px solid;
+	padding: 20px;
+
+
+	border-bottom-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-top-style: none;
+
+}
+
+
+
+article footer
+{
+	text-align: right; /*aline a la derecha del pie que se encuentar aen arcticulo*/
+}
+
+time{
+	color: #999999;
+}
+
+figcaption{
+	font: italic 14px verdana, sans-serif;
+}
+
+
+#descarga-jquery
+{
+	background: #333;
+
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+#des1
+{
+	background-color: #CC8540;
+    border-bottom-color: #999;
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+
+    border-top-color: #CCC;
+    border-bottom-color: #CCC;
+
+    border-left-color: #CCC;
+    border-right-color: #CCC;
+    
+
+    border-bottom-style: solid;
+    border-top-style: soldid;
+
+    border-left-style: solid;;
+    border-right-style: solid;
+    border-image-source: none;
+
+     margin-top: 15px;
+     list-style: none;
+     color: #CCC;
+
+
+
+}
+
+#tit
+{
+	color: #71D1FF;
+    font-family: "klavika-web","Helvetica Neue",Helvetica,Arial,Genev;
+    font-weight: 700;
+    line-height: 42px;
+    text-shadow: rgba(0, 0, 0, 0.85) 0px 0px 4px;
+
+
+}
+
+#tit2
+{
+	color: #71D1FF;
+    font-family: "klavika-web","Helvetica Neue",Helvetica,Arial,Genev;
+}

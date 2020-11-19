@@ -1,0 +1,139 @@
+/*  Selector universal*/
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+/* agregando estilos para los elementos h1,h2*/
+
+ body
+ {
+ 	background-image:  url("../Imagenes/dark.png");
+	background-repeat: repeat-x,y;
+	color: #ffffff;
+	text-align: center;
+ }
+
+
+/* regla por defecto para elementos estructurales de HTML*/
+
+header, section, footer, aside, nav, article, figure, figcaption, hgroup,body,table,a,img,{
+	display:block;
+}
+
+/* centrando el cuerpo*/
+
+
+#fig2
+{
+	text-align: center;
+	padding-top: 30px;
+	padding-right: 150px;
+}
+ a
+{
+	color: #02806B;
+	font-size: 100px;
+	text-decoration: none;
+}
+
+#ant
+{
+	float: left;
+	padding-top: 475px;
+	padding-left: 70px;
+}
+#sig
+{
+	float: right;
+	padding-right:70px;
+}
+#pie
+{	
+	text-align: center;
+	
+}
+table
+{
+	text-align: center;
+    padding-left: 35px;
+}
+
+input
+{
+	padding-left: 55px;
+	padding-right: 55px;
+	background-color: #e0f7fa;
+	width: 100px; 
+    color: black;
+    
+}
+
+#cero
+{
+	padding-right: 114px;
+}
+#igual
+{
+	padding-left: 114px;
+}
+
+#uno
+{
+	padding-right: 55px;
+}
+#mas
+{
+	padding-left: 55px;
+}
+
+#cuatro
+{
+	padding-right: 55px;
+}
+#menos
+{
+	padding-left: 55px;
+}
+
+#n
+{
+	padding-right: 200px;
+	padding-left: 200px;
+}
+
+#links a 
+{
+	    font-family: "Helvetica Neue",HelveticaNeue,Helvetica,Arial,sans-;
+		color: #108040;
+		border-image-source: none;
+		list-style: none;
+		
+}
+
+#menun
+{
+	background: #333;
+	text-align: right;
+}
+
+#menun li{
+	display: inline-block;
+	list-style: none;
+	font: bold 14px verdana, sans-serif;
+	color: #ffffff;
+}
+
+#menun li a
+{
+	display: block;
+	padding: 10px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#menun li a:hover
+{
+	background: #000000;;
+}

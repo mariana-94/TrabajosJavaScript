@@ -1,0 +1,21 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+header, section, footer, aside, nav, article, figure, figcaption, hgroup,body,table,a,img,div,class{
+	display:block;
+}
+
+#Agrupar
+{
+    white-space: 200px;
+    border: 80px;
+    border-color: darkolivegreen;
+    border-style: solid;
+    color: black;
+}
+
+#color1
+{
+     white-space: 20px;  
+}

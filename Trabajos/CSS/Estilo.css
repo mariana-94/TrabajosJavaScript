@@ -1,0 +1,31 @@
+/*  Selector universal*/
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+header, section, footer, aside, nav, article, figure, figcaption, hgroup,body,table,a,img,{
+	display:block;
+}
+
+table
+{
+	  border-spacing:80px;
+      width:20%;
+      border-style: dotted;
+      border-style: 5px;
+}
+
+th
+{
+	border-style: solid;
+    border-color: aqua;
+	border: 50px;
+}
+
+tr
+{
+	border-style: solid;
+	border: 50px;
+    border-color: aqua;
+}
